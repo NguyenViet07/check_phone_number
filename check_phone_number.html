@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function checkPhoneNumber(str) {
+            var regexp = /^\([0-9]{2,2}\)\-\([0][0-9]{9,9}\)$/
+            if (regexp.test(str)){
+                return true;
+            }
+            return false;
+        }
+        console.log(checkPhoneNumber("(84)-(0978489648)"));
+        console.log(checkPhoneNumber("(a8)-(22222222)"))
+    </script>
+
+</body>
+</html>
